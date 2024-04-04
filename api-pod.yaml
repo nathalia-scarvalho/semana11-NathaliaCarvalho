@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: spring
+  labels:
+    app: api-pod
+spec:
+  containers:
+    - name: spring
+      image: leosouzadev1/springapi:latest
+
+      ports:
+        - containerPort: 8080
+      env:
+        - name: MYSQL_HOST
+          value: "service-bd"
+        - name: MYSQL_DATABASE
+          value: "database_hibernate"
