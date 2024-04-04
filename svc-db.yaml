@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: servicebd
+  name: svc-dv
 spec:
   type: ClusterIP
   selector:
-    app: bd-pod
+    app: db-pod
   ports:
     - port: 3306

@@ -13,6 +13,6 @@ spec:
         - containerPort: 8080
       env:
         - name: MYSQL_HOST
-          value: "service-bd"
+          value: "svc-db"
         - name: MYSQL_DATABASE
           value: "database_hibernate"

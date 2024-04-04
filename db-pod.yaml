@@ -3,13 +3,10 @@ kind: Pod
 metadata:
   name: database_hibernate
   labels:
-    app: bd-pod
+    app: db-pod
 spec:
   containers:
     - name: mysql
       image: mysql:latest
       ports:
         - containerPort: 3306
-      envFrom:
-        - configMapRef:
-            name: bd-configmap
